@@ -4,7 +4,7 @@ const { createClient } = require("@supabase/supabase-js");
 require("dotenv").config();
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 const supabase = createClient(
     process.env.SUPABASE_URL,
@@ -63,6 +63,8 @@ app.post("/api/zadaci", async (req, res) => {
     res.status(201).json(data[0]);
 });
 
-app.listen(PORT, () => {
-    console.log(`Backend radi na http://localhost:${PORT}`);
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, "0.0.0.0", () => {
+    console.log(`Backend radi na portu ${PORT}`);
 });
