@@ -63,8 +63,6 @@ app.post("/api/zadaci", async (req, res) => {
     res.status(201).json(data[0]);
 });
 
-const PORT = process.env.PORT || 3000;
-
 app.listen(PORT, "0.0.0.0", () => {
     console.log(`Backend radi na portu ${PORT}`);
 });
