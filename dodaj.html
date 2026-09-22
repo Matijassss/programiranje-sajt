@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="sr">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dodaj zadatak - Programiranje</title>
+</head>
+
+<body>
+
+    ```
+    <header>
+        <h1>Dodaj novi zadatak</h1>
+        <p>Dodaj zadatak iz programiranja</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Početna</a>
+        <a href="zadaci.html">Zadaci</a>
+        <a href="dodaj.html">Dodaj zadatak</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Novi zadatak</h2>
+
+            <form>
+
+                <label for="naziv">Naziv zadatka:</label>
+                <br>
+                <input type="text"
+                       id="naziv"
+                       name="naziv"
+                       placeholder="Unesi naziv zadatka"
+                       required>
+
+                <br><br>
+
+                <label for="opis">Opis zadatka:</label>
+                <br>
+                <textarea id="opis"
+                          name="opis"
+                          rows="8"
+                          cols="50"
+                          placeholder="Unesi tekst zadatka"
+                          required></textarea>
+
+                <br><br>
+
+                <label for="jezik">Programski jezik:</label>
+                <br>
+
+                <select id="jezik" name="jezik">
+                    <option value="C++">C++</option>
+                    <option value="Python">Python</option>
+                    <option value="Java">Java</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="C#">C#</option>
+                </select>
+
+                <br><br>
+
+                <label for="kod">Kod zadatka:</label>
+                <br>
+
+                <textarea id="kod"
+                          name="kod"
+                          rows="12"
+                          cols="70"
+                          placeholder="Unesi kod zadatka"></textarea>
+
+                <br><br>
+
+                <button type="submit">Sačuvaj zadatak</button>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Školski projekat</p>
+    </footer>
+
+    <script src="script.js"></script>
+    ```
+
+</body>
+</html>

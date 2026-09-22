@@ -1,0 +1,4 @@
+backhend/.env
+backhend/node_modules/
+bin/
+obj/
