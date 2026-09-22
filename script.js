@@ -11,7 +11,7 @@ if (form) {
         const kod = document.getElementById("kod").value;
 
         try {
-            const response = await fetch("http://localhost:3000/api/zadaci", {
+            const response = await fetch("https://programiranje-sajt.onrender.com/api/zadaci", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -43,7 +43,7 @@ if (form) {
 if (listaZadataka) {
     async function ucitajZadatke() {
         try {
-            const response = await fetch("http://localhost:3000/api/zadaci");
+            const response = await fetch("https://programiranje-sajt.onrender.com/api/zadaci");
             const zadaci = await response.json();
 
             if (zadaci.length === 0) {
